@@ -8,6 +8,9 @@ SVF_ENT_HEADER = "\n" + "##> {}\n"
 
 EntryData = namedtuple("Entry", ["entry_num", "entry_text", "entry_links"])
 
+def showusage():
+    raise NotImplementedError("Must write some shit here.")
+
 def get_page_tree(url, use_session=False):
     if use_session:
         _getter = requests.Session()
